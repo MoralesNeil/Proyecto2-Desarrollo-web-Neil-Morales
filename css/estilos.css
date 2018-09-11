@@ -141,3 +141,34 @@
     padding: 20px;
 }
 
+
+
+/*SECTION-PAISAJES Y RETRATOS*/
+
+.section-paisajes {
+    width: 95%;
+    margin: auto;
+}
+
+.div1-paisajes {
+    background-color: #d5c75f;
+    padding-bottom: 20px;
+}
+
+.div1-paisajes figure img {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+}
+
+#imagen-1 {
+    filter: blur(10px);
+}
+
+.div1-paisajes figure:nth-child(even) {
+    filter: grayscale(100%);
+}
+
+.div1-paisajes figure:nth-child(3) {
+    filter: sepia(90%);
+}
