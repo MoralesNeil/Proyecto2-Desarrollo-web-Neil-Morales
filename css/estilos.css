@@ -1,5 +1,5 @@
 
-/*--------------------MOBILE VERSION--------------------*/
+/*--------------------GENERALES--------------------*/
 
 @font-face {
     font-family: 'DancingScript-Bold';
@@ -12,6 +12,9 @@
     box-sizing: border-box;
     font-family: 'DancingScript-Bold';
 }
+
+/*--------------------VERSIÓN PARA MÓVIL--------------------*/
+
 
 .contenedor {
     background-color: #02010a;
@@ -52,17 +55,10 @@
     margin: 2px;
 }
 
-.a1 {
+.a1, .a2, .a3 {
     text-decoration: none;
 }
 
-.a2 {
-    text-decoration: none;
-}
-
-.a3 {
-    text-decoration: none;
-}
 
 /*SECTION-INDEX*/
 
@@ -70,6 +66,8 @@
     width: 95%;
     margin: auto;
 }
+
+/*---------------------------*/
 .div1 {
     background-color: #82c3a6;
 }
@@ -81,6 +79,7 @@
     box-shadow: 2px 2px #02010a;
 }
 
+/*---------------------------*/
 .div2 {
     background-color: #d5c75f;
     text-align: center;
@@ -125,19 +124,7 @@
     background-color: #C6d5c5;
 }
 
-.colum1 {
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-}
-
-.colum2 {
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-}
-
-.colum3 {
+.colum1, .colum2, .colum3, .colum4 {
     width: 90%;
     margin: auto;
     padding: 20px;
@@ -147,40 +134,74 @@
     width: 30px;
 }
 
-.colum4 {
-    width: 90%;
-    margin: auto;
-    padding: 20px;
-}
-
-
 
 /*SECTION-PAISAJES Y RETRATOS*/
 
-.section-paisajes {
+.section-paisajes, .section-retratos {
     width: 95%;
     margin: auto;
 }
 
-.div1-paisajes {
+.div1-fotos {
     background-color: #d5c75f;
     padding-bottom: 20px;
 }
 
-.div1-paisajes figure img {
+.div1-fotos figure img {
     width: 80%;
     margin-left: 10%;
     margin-top: 30px;
+    box-shadow: 2px 2px #02010a;
 }
 
 #imagen-1 {
     filter: blur(10px);
 }
 
-.div1-paisajes figure:nth-child(even) {
+.div1-fotos figure:nth-child(even) {
     filter: grayscale(100%);
 }
 
-.div1-paisajes figure:nth-child(3) {
+#imagen-3 {
     filter: sepia(90%);
+}
+
+
+
+
+/*--------------------VERSION DESKTOP--------------------*/
+
+@media (min-width:900px) {
+    body {
+        background-color: #02010a;
+    }
+    .contenedor {
+        width: 900px;
+        margin: auto;
+    }
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .div2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .colum1, .colum2, .colum3, .colum4 {
+        height: 200px;
+    }
+
+    .div1-fotos {
+        display: flex;
+        flex-direction: row;
+    }
 }
